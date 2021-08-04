@@ -51,7 +51,7 @@ body {
 /* header */
 #header {
   border-bottom: solid 1px var(--secondary-color);
-  line-height: 0.6em;
+  line-height: 2em;
   padding: 0.25em 0;
 }
  
