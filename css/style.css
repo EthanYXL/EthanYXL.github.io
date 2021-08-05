@@ -14,7 +14,7 @@
   --selection-color: #dae4e7;
   --body-stack: "Noto Serif TC", "Georgia", "Times New Roman", serif;
   --secondary-stack: "Noto Sans TC", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Verdana", sans-serif;
-  --title-stack: "Playfair Display SC", "Georgia", serif;
+  --title-stack: "Noto Serif TC", "Georgia", serif;
 }
 
 html {
@@ -42,7 +42,7 @@ body {
   margin: 3rem auto 10rem auto;
   max-width: 100%;
   padding: 1em;
-  width: 50em;
+  width: 40em;
 }
  
 @media all and (max-width:760px) {#wrapper {margin-top: 3rem;}}
@@ -254,7 +254,7 @@ h2 {
 }
 
 h3, h4, h5, h6 {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
   margin-top: 1.5rem;
   text-transform: uppercase;
@@ -432,5 +432,7 @@ td, th, table caption, table td, table th {
 
 footer{
   font-size: 0.8em;
+  padding-bottom: 1em;
+  font-family: "Noto Serif TC", "Georgia", "Times New Roman", serif;
   text-align: center;
 }

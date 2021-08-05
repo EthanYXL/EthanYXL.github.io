@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>4gamers限時免費提醒程式 | Ethan&#39;s Coffeehouse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/css/highlight.css">
+
+  
+  <meta name="description" content="作為一個手頭不是特別寬裕的Steam玩家，如果有撿便宜的機會需要好好把握(例如意圖使人剁手的夏季特賣)。除了折扣外，偶爾也會去4gamers查看看有沒有有興趣的Steam限時免費遊戲可拿。但壞就壞在這個偶爾，經常發生領取時間過一天才看到的遺憾發生。 因此，就來試試看用python寫一個小程式，提醒自已有新的文章吧！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="4gamers限時免費提醒程式">
+<meta property="og:url" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/index.html">
+<meta property="og:site_name" content="Ethan&#39;s Coffeehouse">
+<meta property="og:description" content="作為一個手頭不是特別寬裕的Steam玩家，如果有撿便宜的機會需要好好把握(例如意圖使人剁手的夏季特賣)。除了折扣外，偶爾也會去4gamers查看看有沒有有興趣的Steam限時免費遊戲可拿。但壞就壞在這個偶爾，經常發生領取時間過一天才看到的遺憾發生。 因此，就來試試看用python寫一個小程式，提醒自已有新的文章吧！">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/json_address1.png">
+<meta property="og:image" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/json_address2.png">
+<meta property="og:image" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/google1.png">
+<meta property="og:image" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/google2.png">
+<meta property="og:image" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/google3.png">
+<meta property="og:image" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/google4.png">
+<meta property="og:image" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/google5.png">
+<meta property="og:image" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/google6.png">
+<meta property="og:image" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/task_scheduler1.png">
+<meta property="og:image" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/task_scheduler2.png">
+<meta property="og:image" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/task_scheduler3.png">
+<meta property="og:image" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/task_scheduler4.png">
+<meta property="og:image" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/task_scheduler5.png">
+<meta property="article:published_time" content="2021-08-05T12:32:40.000Z">
+<meta property="article:modified_time" content="2021-08-05T14:12:15.147Z">
+<meta property="article:author" content="Ethan Li">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ethanyxl.github.io/2021/08/05/4Gamers-free-game-reminder/json_address1.png"><meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="wrapper">
+    <header id="header">
+  <h1 id="title">
+    <a href="/">Ethan&#39;s Coffeehouse</a>
+  </h1>
+  <nav>
+    
+    
+      
+      <a class="nav-link" href="/">Home</a>
+    
+      
+        <span class="nav-spacer">×</span>
+      
+      <a class="nav-link" href="/archives">Archives</a>
+    
+      
+        <span class="nav-spacer">×</span>
+      
+      <a class="nav-link" href="/about">About</a>
+    
+    
+  </nav>
+</header>
+
+    <div id="content">
+      <article id="post-4Gamers-free-game-reminder" class="article article-type-post" itemprop="blogPost" itemscope>
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 class="article-title" itemprop="headline name">
+      4gamers限時免費提醒程式
+    </h2>
+  
+
+
+        <div class="article-meta">
+          <time class="article-date" datetime="2021-08-05T12:32:40.000Z" itemprop="datePublished">2021-08-05 8:32 晚上</time>
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+        <p>作為一個手頭不是特別寬裕的Steam玩家，如果有撿便宜的機會需要好好把握(例如意圖使人剁手的夏季特賣)。除了折扣外，偶爾也會去4gamers查看看有沒有有興趣的Steam限時免費遊戲可拿。但壞就壞在這個偶爾，經常發生領取時間過一天才看到的遺憾發生。</p>
+<p>因此，就來試試看用python寫一個小程式，提醒自已有新的文章吧！</p>
+<span id="more"></span>
+
+<p>我把這個程式主要功能分成三個，一個個去實現：</p>
+<ul>
+<li>爬蟲：取得指定關鍵字的貼文標題、連結</li>
+<li>寄信：把標題跟連結寄給使用者</li>
+<li>定時執行：嚴格來說這個不是程式本身的功能，因為我最後是透過windows內建的<strong>工作排程器</strong>完成的</li>
+</ul>
+<hr>
+<h3 id="爬蟲"><a href="#爬蟲" class="headerlink" title="爬蟲"></a>爬蟲</h3><p>在寫程式之前，先找一下目標的資訊在哪裡。</p>
+<p>因為我們是要定時取得特定關鍵字的資訊，所以先到搜尋頁面。試著搜尋可以看到結果即時更新，可以合理推測在打字的過程中，向伺服器傳送了要求，並得到回覆(搜尋結果)。</p>
+<p>打開開發者工具，再試著輸入關鍵字可以看到果然伺服器回應了一個連結，打開後可以看到是一個json檔，裡面就包含了我們所要的內容。</p>
+<p><img src="json_address1.png" alt="json檔位址"></p>
+<p><img src="json_address2.png" alt="json檔位址"></p>
+<p>接著就可以開始寫code了。</p>
+<p>回到PyCharm，導入以下的函式庫：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests  </span><br><span class="line"><span class="keyword">import</span> datetime</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>requests：需先使用pip下載。用內建的urllib也可以，只是這個比較方便。</li>
+<li>datetime：處理時間相關的問題</li>
+</ul>
+<p>建立一個函式<code>crawler()</code>，並輸入以下內容：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 取得網頁內容 # </span></span><br><span class="line">url = <span class="string">&quot;https://www.4gamers.com.tw/site/api/news/search?term=免費&amp;pageSize=20&quot;</span>  </span><br><span class="line">response = requests.get(url, verify=<span class="literal">False</span>)  </span><br><span class="line">result = response.json()  <span class="comment"># 取得json內容   </span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>這邊我把關鍵字”免費”寫死在url裡面，也可以拿出來方便改動</li>
+<li>requests有提供取得json內容的函式(<code>json()</code>)</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">recommend_list = [] </span><br><span class="line"><span class="comment"># 篩選需要的內容 #</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> result[<span class="string">&quot;data&quot;</span>][<span class="string">&quot;results&quot;</span>]:  </span><br><span class="line">	epoch = i[<span class="string">&quot;createPublishedAt&quot;</span>] // <span class="number">1000</span>  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">if</span> datetime.datetime.fromtimestamp(epoch) &gt; datetime.datetime.now() - datetime.timedelta(days=<span class="number">1</span>):  </span><br><span class="line">	topic = &#123;  </span><br><span class="line">		<span class="string">&quot;title&quot;</span>: i[<span class="string">&quot;title&quot;</span>],  </span><br><span class="line">		<span class="string">&quot;url&quot;</span>: i[<span class="string">&quot;canonicalUrl&quot;</span>]  </span><br><span class="line">            &#125;  </span><br><span class="line">	recommend_list.append(topic)  </span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> recommend_list</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>這裡我們建立一個迴圈，利用日期篩選過去24小時內發布的文章</li>
+<li>每篇文章發布時間紀錄在json中的createPublishedAt，使用epoch time紀錄(1970/01/01至今所經過的時間)，json檔紀錄的單位到毫秒(因為javascript的<code>getTime()</code>的輸入單位是毫秒)，因此要先將數值除以1000變成秒，才能讓python的<code>datetime.datetime.fromtimestamp(epoch)</code>讀取，並與現在時間比較。</li>
+<li>符合條件的文章，我們只取標題與超連結，並加入<code>recommend_list</code>。</li>
+<li>篩選完畢後，回傳<code>recommend_list</code>。</li>
+<li>可以先執行看看，可以發現我們已經取得了需要的資訊。</li>
+<li>接著建立一個新函式<code>get_content()</code>，產生信件的內文部分：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_content</span>(<span class="params">r_list</span>):</span>  </span><br><span class="line">    head = <span class="string">&quot;過去1日內新增關鍵字有「免費」的相關文章：\n\n&quot;</span>  </span><br><span class="line"> 	cont = <span class="string">&quot;&quot;</span>  </span><br><span class="line"> 	<span class="keyword">for</span> n, i <span class="keyword">in</span> <span class="built_in">enumerate</span>(r_list):  </span><br><span class="line">        cont = cont + <span class="built_in">str</span>(n+<span class="number">1</span>) + <span class="string">&quot;.&quot;</span> + i[<span class="string">&quot;title&quot;</span>] + <span class="string">&quot;\n&quot;</span>  </span><br><span class="line"> 	cont = cont + i[<span class="string">&quot;url&quot;</span>] + <span class="string">&quot;\n\n&quot;</span>  </span><br><span class="line">  </span><br><span class="line"> 	<span class="keyword">return</span> head + cont</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="寄信"><a href="#寄信" class="headerlink" title="寄信"></a>寄信</h3><p>導入以下函式庫：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> email.mime.multipart <span class="keyword">import</span> MIMEMultipart  </span><br><span class="line"><span class="keyword">from</span> email.mime.text <span class="keyword">import</span> MIMEText  </span><br><span class="line"><span class="keyword">import</span> smtplib</span><br></pre></td></tr></table></figure>
+<ul>
+<li>python內建email函式庫負責email的內容，但透過SMTP進行傳輸的任務是透過smtplib模組負責。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sendmail</span>(<span class="params">cont</span>):</span></span><br><span class="line">    mail = MIMEMultipart()</span><br><span class="line">    mail[<span class="string">&quot;subject&quot;</span>] = <span class="string">&quot;4Gamers每日「免費」相關文章更新&quot;</span>  <span class="comment">#設定信件主題</span></span><br><span class="line">    mail[<span class="string">&quot;from&quot;</span>] = <span class="string">&quot;sender@mail.com&quot;</span>  <span class="comment">#設定寄件者</span></span><br><span class="line">    mail[<span class="string">&quot;to&quot;</span>] = <span class="string">&quot;receiver@mail.com&quot;</span>  <span class="comment">#設定收件者</span></span><br><span class="line">    mail.attach(MIMEText(cont))  <span class="comment">#設定信件內容</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> smtplib.SMTP(host=<span class="string">&quot;smtp.gmail.com&quot;</span>, port=<span class="string">&quot;587&quot;</span>) <span class="keyword">as</span> smtp:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            smtp.ehlo()  <span class="comment"># 驗證SMTP伺服器</span></span><br><span class="line">            smtp.starttls()  <span class="comment"># 建立加密傳輸(TLS)</span></span><br><span class="line">            smtp.login(<span class="string">&quot;寄件者信箱&quot;</span>, <span class="string">&quot;應用程式密碼&quot;</span>)  <span class="comment"># 登入寄件者gmail，密碼建議透過環境變數呼叫</span></span><br><span class="line">            smtp.send_message(mail)  <span class="comment"># 寄送郵件</span></span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;Complete!&quot;</span>)</span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;Error message: &quot;</span>, e)</span><br></pre></td></tr></table></figure>
+
+<h4 id="環境變數"><a href="#環境變數" class="headerlink" title="環境變數"></a>環境變數</h4><p>上面的帳號密碼我會採用環境變數儲存，如果自己寫的程式需要輸入一些不得外流的資料，可以先設定在環境變數，這樣程式移動到不同環境執行時，機敏數值就不會跟著程式碼轉移(尤其是給其他人使用時)</p>
+<ul>
+<li>在開始功能表按右鍵&gt;系統&gt;進階系統設定</li>
+<li>點選環境變數</li>
+<li>在系統變數的地方按下新增，輸入變數的名稱與值，確認之後就可以在程式中透過<code>os.environ.get(&quot;變數名稱&quot;)</code>呼叫他們了</li>
+</ul>
+<h4 id="密碼"><a href="#密碼" class="headerlink" title="密碼"></a>密碼</h4><ol>
+<li><p>由於google會禁止來路不明的程式存取帳戶，因此在我們寫的程式中必須使用應用程式密碼進行登入，所以要先對帳戶進行設定。<br><img src="google1.png" alt="帳戶設定"></p>
+</li>
+<li><p>設定兩步驟驗證<br><img src="google2.png" alt="設定兩步驟驗證"></p>
+</li>
+<li><p>設定完後，會出現應用程式密碼<br><img src="google3.png" alt="應用程式密碼"></p>
+</li>
+<li><p>選擇其他<br><img src="google4.png" alt="選擇其他"></p>
+</li>
+<li><p>取一個名字<br><img src="google5.png" alt="命名"></p>
+</li>
+<li><p>產生一組密碼<br><img src="google6.png" alt="產生密碼"></p>
+</li>
+</ol>
+<p>須注意如果使用者更改帳戶密碼，應用程式密碼就需要重新設定，而且如果不需要使用建議刪掉。</p>
+<hr>
+<h3 id="整合"><a href="#整合" class="headerlink" title="整合"></a>整合</h3><p>至此，我們已經完成程式的主要功能了，接下來將這些功能整合：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    recommend = crawler()</span><br><span class="line">	</span><br><span class="line">	<span class="comment"># 如果有新文章，才寄信</span></span><br><span class="line">    <span class="keyword">if</span> recommend:  </span><br><span class="line">        content = get_content(recommend)  <span class="comment"># 產生信件內文</span></span><br><span class="line">        sendmail(content)  <span class="comment"># 寄出信件</span></span><br></pre></td></tr></table></figure>
+<p>如果順利的話，只要執行程式，你應該就能夠收到包含文章標題、連結的email(除非指定的時間內沒有新文章)。</p>
+<hr>
+<h3 id="自動執行"><a href="#自動執行" class="headerlink" title="自動執行"></a>自動執行</h3><p>最後希望能夠每天固定時間執行程式，這裡我採用windows內建的「工作排程器」完成。</p>
+<ol>
+<li><p>開啟後，點選「建立基本工作」<br><img src="task_scheduler1.png" alt="建立基本工作"></p>
+</li>
+<li><p>輸入名稱<br><img src="task_scheduler2.png" alt="輸入名稱"></p>
+</li>
+<li><p>選擇執行的週期<br><img src="task_scheduler3.png" alt="選擇執行週期"></p>
+</li>
+<li><p>設定時間<br><img src="task_scheduler4.png" alt="設定時間"></p>
+</li>
+<li><p>程式或指令碼的地方選擇python的執行檔，新增引數則輸入要執行的py檔位置。<br><img src="task_scheduler5.png" alt="設定執行檔"></p>
+</li>
+</ol>
+<p>最後按下完成，就完成設定了。正常情況下只要電腦開著，一到指定的時間就會自動執行。</p>
+
+      
+    </div>
+    
+    
+    
+  </div>
+</article>
+
+  
+<nav id="article-nav" class="article-nav">
+  
+    <span id="article-nav-newer" class="article-nav-link-wrap newer"></span>
+  
+  
+    <a href="/2021/08/01/Test-Title/" id="article-nav-older" class="article-nav-link-wrap older">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          驗機注意事項
+        
+      </div>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+    </div>
+  </div>
+  
+
+
+
+
+<div id="settings-container">
+  <div id="dark-mode">dark</div>
+  <div id="sans-font">sans</div>
+</div>
+<script type="text/javascript">
+let d=document,r=d.documentElement.style,f=r.setProperty.bind(r),l=localStorage,s=l.getItem('s')||(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),n=l.getItem('n'),m=d.getElementById("dark-mode"),b=()=>{f('--bg-color','#fafafa');f('--code-bg-color','#f4f4f4');f('--text-color','#212121');f('--secondary-color','#808080');f('--tertiary-color','#b0b0b0');f('--link-color','#b5c8cf');f('--link-hover-color','#618794');f('--link-bg-color','#dae4e7');f('--selection-color','#dae4e7');m.innerHTML="dark"},c=()=>{f('--bg-color','#212121');f('--code-bg-color','#292929');f('--text-color','#fff');f('--secondary-color','#c0c0c0');f('--tertiary-color','#6e6e6e');f('--link-color','#4d6b75');f('--link-hover-color','#96b1bb');f('--link-bg-color','#5d828e');f('--selection-color','#acc1c9');m.innerHTML="light"},o=d.getElementById("sans-font"),e=()=>{f('--body-stack','"Noto Serif TC", "Georgia", "Times New Roman", serif');o.innerHTML="sans"},g=()=>{f('--body-stack','"Noto Sans TC", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Verdana", sans-serif');o.innerHTML="serif"};m.onclick=()=>{if(s==2){s=1;l.setItem('s',s);c()}else{s=2;l.setItem('s',s);b()}};o.onclick=()=>{if(n==2){n=1;l.setItem('n',n);g()}else{n=2;l.setItem('n',n);e()}};if(!s){s=2;l.setItem('s',2)};if(s==1){c()};if(!n){n=2;l.setItem('n',2)};if(n==1){g()};
+</script>
+
+
+
+
+<footer>©Copyright Ethan Li 2021</footer>
+
+</body>
+</html>
